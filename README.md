@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+AstroVoyage
+AstroVoyage is an interactive web application developed by Team Hackape for the NASA Space Apps Challenge. This project aims to provide an engaging and educational experience for users of all ages, allowing them to explore the wonders of our solar system through an interactive Orrery model.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Table of Contents
+Features
+Tech Stack
+Getting Started
+Contributors
+License
+Features
+Interactive Orrery: Visualize the movements of planets, moons, and other celestial bodies in real-time.
+Planetary Information: Access detailed information about each planet through the menu, including composition, atmosphere, and interesting facts.
+Educational Resources: Learn about asteroids, comets, and dwarf planets to deepen your understanding of our solar system.
+Tech Stack
+Frontend: React, TypeScript, and CSS for a responsive and interactive user interface.
+Data Integration: Utilizes NASA's data for accurate representations of celestial bodies and their movements.
+Getting Started
+To run the application locally, follow these steps:
 
-Currently, two official plugins are available:
+Clone the repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copiar código
+git clone https://github.com/yourusername/astrovoyage.git
+Navigate to the project directory:
 
-## Expanding the ESLint configuration
+bash
+Copiar código
+cd astrovoyage
+Install dependencies:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+bash
+Copiar código
+npm install
+Start the development server:
 
-- Configure the top-level `parserOptions` property like this:
+bash
+Copiar código
+npm start
+Open your browser and go to http://localhost:3000 to view the application.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Contributors
+Team Hackape
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
