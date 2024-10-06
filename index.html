@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="src/images/NASA-LOGO.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/path/to/index.css" />
+    <link rel="stylesheet" href="/path/to/app.css" />
+    <title>AstroVoyage</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="src/images/NASA-LOGO.png" alt="NASA Logo" width="100" />
+            <h1>AstroVoyage</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#history">History</a></li>
+                    </ul>
+                </li>
+                <li><a href="#planets">Planets</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#mercury">Mercury</a></li>
+                        <li><a href="#venus">Venus</a></li>
+                        <li><a href="#earth">Earth</a></li>
+                        <li><a href="#mars">Mars</a></li>
+                        <li><a href="#jupiter">Jupiter</a></li>
+                        <li><a href="#saturn">Saturn</a></li>
+                        <li><a href="#uranus">Uranus</a></li>
+                        <li><a href="#neptune">Neptune</a></li>
+                    </ul>
+                </li>
+                <li><a href="#more-info">More Info</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#asteroids">Asteroids</a></li>
+                        <li><a href="#comets">Comets</a></li>
+                        <li><a href="#dwarf-planets">Dwarf Planets</a></li>
+                        <li><a href="#sun">The Sun</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="orrery-description">
+      <h2>What is an Orrery?</h2>
+      <p>
+        An Orrery is a mechanical model of the solar system that illustrates the orbits of planets, moons, and other celestial bodies around a light source representing the Sun. These intricate devices serve as invaluable educational tools, allowing students and enthusiasts alike to visualize the dynamics and scale of our solar system. 
+      </p>
+      <p>
+        With this model, you can explore how each planet moves in its orbit, learn about their unique characteristics, and discover fascinating facts about the cosmos. Dive into the wonders of astronomy and enhance your understanding of celestial mechanics with our interactive Orrery! Enjoy your journey through space!
+      </p>
+    </div>
+
+    <div id="root">
+        <!-- Solar system model goes here -->
+    </div>
+
+    <footer>
+        <p>All rights reserved 2024 &copy; Created by the HACKAPE team</p>
+    </footer>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+        document.querySelectorAll('.nav-menu > li').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const dropdown = item.querySelector('.dropdown-menu');
+                if (dropdown) dropdown.classList.add('active');
+            });
+            item.addEventListener('mouseleave', () => {
+                const dropdown = item.querySelector('.dropdown-menu');
+                if (dropdown) dropdown.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
