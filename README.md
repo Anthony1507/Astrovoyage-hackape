@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# AstroVoyage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AstroVoyage** is an interactive web application developed by **Team Hackape** for the **NASA Space Apps Challenge**. This project aims to provide an engaging and educational experience for users of all ages, allowing them to explore the wonders of our solar system through an interactive Orrery model.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Contributors](#contributors)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Interactive Orrery**: Visualize the movements of planets, moons, and other celestial bodies in real-time.
+- **Planetary Information**: Access detailed information about each planet through the menu, including composition, atmosphere, and interesting facts.
+- **Educational Resources**: Learn about asteroids, comets, and dwarf planets to deepen your understanding of our solar system.
 
-## Expanding the ESLint configuration
+## Tech Stack
+- **Frontend**: React, TypeScript, and CSS for a responsive and interactive user interface.
+- **Data Integration**: Utilizes NASA's data for accurate representations of celestial bodies and their movements.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
+To run the application locally, follow these steps:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/astrovoyage.git
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Navigate to the project directory:
+   ```bash
+   cd astrovoyage
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+5. Open your browser and go to `http://localhost:3000` to view the application.
+
+## Contributors
+- Team Hackape
