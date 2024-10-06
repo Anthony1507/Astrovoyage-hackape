@@ -44,7 +44,7 @@ main {
 
 /* Header styles */
 header {
-  
+  top:0;
   position: fixed;
   z-index: 200;
   display: flex;
@@ -152,13 +152,13 @@ h1 {
 
 /* Orrery description styles */
 .orrery-description {
-  position: absolute;
-  width: 30%;
-  left: 2rem;
+  box-sizing: border-box;
+  width: 40%;
+  margin-left: 2rem;
   background: rgba(136, 135, 135, 0.1); /* Semi-transparent background */
   border-radius: 15px; /* Rounded borders */
   padding: 20px; /* Internal spacing */
-  margin: 20px; /* External margin */
+
   color: #e0e0e0; /* Text color */
   text-align: center; /* Center text */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Shadow to highlight the box */
@@ -173,12 +173,14 @@ h1 {
   margin-bottom: 5px; /* Spacing below the header */
   font-family: "Orbitron", sans-serif; /* Header font */
   letter-spacing: 1px; /* Letter spacing */
+  text-align: start;
 }
 
 /* Orrery description paragraph styles */
 .orrery-description p {
   font-size: 12px; /* Paragraph text size */
   line-height: 1.6; /* Line height */
+  text-align: start;
 }
 
 /* Footer styles */

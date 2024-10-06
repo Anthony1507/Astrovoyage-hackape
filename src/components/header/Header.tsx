@@ -1,11 +1,16 @@
 import { useState } from "react";
 import LOGO from "../../../images/logo2.svg"
+import { useNavigate } from "react-router-dom";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const navigate = useNavigate()
+    const goTo = (path) => {
+        navigate(path);
+    }
   return (
     <header>
       <div className="logo-container">
@@ -19,7 +24,7 @@ export const Header = () => {
       <nav>
         <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
           <li>
-            <a href="#home">Home</a>
+            <a onClick={()=>{goTo("/")}}>Home</a>
           </li>
           <li>
             <a href="#about">About</a>
