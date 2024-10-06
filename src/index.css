@@ -26,8 +26,8 @@ html {
 }
 
 main {
-  height: 84vh;
-  max-height: 84vh;
+  height: 94vh;
+  max-height: 94vh;
   width: 100%;
   position: relative;
 
@@ -37,8 +37,16 @@ main {
   flex-direction: column;
 }
 
+.logoIMG{
+  height: 6vh;
+  width: auto;
+}
+
 /* Header styles */
 header {
+  
+  position: fixed;
+  z-index: 200;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,9 +57,14 @@ header {
   ); /* Gradient from dark gray to dark blue */
   color: #fff;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   box-shadow: 0 2px 10px rgba(25, 10, 85, 0.2); /* Shadow for depth */
   margin: 0;
+  background: transparent; /* Fondo negro semi-transparente */
+  backdrop-filter: blur(40px); /* Desenfoque para el efecto de vidrio */
+
+  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
 }
 
 /* Logo container styles */
@@ -60,7 +73,7 @@ header {
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 8px 0;
+  padding: 8px 0 8px 1rem;
 }
 
 .titlePage {
@@ -142,7 +155,7 @@ h1 {
   position: absolute;
   width: 30%;
   left: 2rem;
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  background: rgba(136, 135, 135, 0.1); /* Semi-transparent background */
   border-radius: 15px; /* Rounded borders */
   padding: 20px; /* Internal spacing */
   margin: 20px; /* External margin */
@@ -173,11 +186,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(
-    135deg,
-    #232323,
-    #0c0231
-  ); /* Same gradient as header */
+
   color: #fff;
   text-align: center;
   width: 100%;
@@ -186,6 +195,12 @@ footer {
   bottom: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Shadow to highlight the box */
   font-size: 12px;
+  background: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente */
+  backdrop-filter: blur(10px); /* Desenfoque para el efecto de vidrio */
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para darle más profundidad */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+
 }
 
 /* Ocultar el scroll en pantallas grandes (PC) */
@@ -248,8 +263,9 @@ footer {
     #232323,
     #0c0231
   );
+  box-sizing: border-box;
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     right: 0;
     width: 100%;
     padding: 10px;

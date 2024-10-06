@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import LOGO from "../../../images/logo2.svg"
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <header>
       <div className="logo-container">
-        <img src="src/images/NASA-LOGO.png" alt="NASA Logo" width="100" />
+        <img src={LOGO} alt="NASA Logo" width="100" className="logoIMG"/>
         <h1 className="titlePage">AstroVoyage</h1>
         {/* Botón hamburguesa para mobile */}
         <button className="menu-toggle" onClick={toggleMenu}>

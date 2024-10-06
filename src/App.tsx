@@ -22,7 +22,7 @@ function App() {
         <div className="w-full h-screen bg-black">
           <Canvas
             camera={{ position: [0, 20, 40], fov: 60 }}
-            style={{ width: "100vw", height: "80vh" }}
+            style={{ width: "100vw", height: "94vh" }}
           >
             <ambientLight intensity={0.1} />
             <pointLight position={[0, 0, 0]} intensity={1} />
