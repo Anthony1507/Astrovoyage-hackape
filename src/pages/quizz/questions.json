@@ -1,16 +1,62 @@
 [
-    {
-      "question": "What is the largest planet in the solar system?",
-      "options": ["Mars", "Jupiter", "Saturn", "Neptune"],
-      "correctAnswer": 1,
-      "points": 10
-    },
-    {
-      "question": "What is the closest planet to the Sun?",
-      "options": ["Venus", "Mars", "Mercury", "Earth"],
-      "correctAnswer": 2,
-      "points": 10
-    }
-    
-  ]
-
+  {
+    "question": "What is the largest planet in the solar system?",
+    "options": ["Mars", "Jupiter", "Saturn", "Neptune"],
+    "correctAnswer": 1,
+    "points": 10
+  },
+  {
+    "question": "What is the closest planet to the Sun?",
+    "options": ["Venus", "Mars", "Mercury", "Earth"],
+    "correctAnswer": 2,
+    "points": 10
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Mars", "Jupiter", "Saturn", "Earth"],
+    "correctAnswer": 0,
+    "points": 10
+  },
+  {
+    "question": "Which planet is famous for its rings?",
+    "options": ["Jupiter", "Mars", "Earth", "Saturn"],
+    "correctAnswer": 3,
+    "points": 10
+  },
+  {
+    "question": "What is the hottest planet in the solar system?",
+    "options": ["Mercury", "Venus", "Mars", "Jupiter"],
+    "correctAnswer": 1,
+    "points": 10
+  },
+  {
+    "question": "Which planet is known for its Great Red Spot?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correctAnswer": 2,
+    "points": 10
+  },
+  {
+    "question": "What planet is known as Earth's twin?",
+    "options": ["Mars", "Venus", "Mercury", "Jupiter"],
+    "correctAnswer": 1,
+    "points": 10
+  },
+  {
+    "question": "Which planet has the most moons?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correctAnswer": 2,
+    "points": 10
+  },
+  {
+    "question": "What is the smallest planet in the solar system?",
+    "options": ["Mercury", "Mars", "Earth", "Venus"],
+    "correctAnswer": 0,
+    "points": 10
+  },
+  {
+    "question": "Which planet is farthest from the Sun?",
+    "options": ["Neptune", "Uranus", "Saturn", "Jupiter"],
+    "correctAnswer": 0,
+    "points": 10
+  }
+]
