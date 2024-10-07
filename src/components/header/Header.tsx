@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LOGO from "../../../images/logo2.svg"
+import LOGO from "../../../images/logo2.svg";
 import { useNavigate } from "react-router-dom";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,15 +7,15 @@ export const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const navigate = useNavigate()
-    const goTo = (path) => {
-        navigate(path);
-    }
+  const navigate = useNavigate();
+  const goTo = (path) => {
+    navigate(path);
+  };
   return (
     <header>
       <div className="logo-container">
-        <img src={LOGO} alt="NASA Logo" width="100" className="logoIMG"/>
-        <h1 className="titlePage">AstroVoyage</h1>
+        <img src={LOGO} alt="NASA Logo" width="100" className="logoIMG"   onClick={()=>{goTo("/")}}/>
+        <h1 className="titlePage" onClick={()=>{goTo("/")}}>AstroVoyage</h1>
         {/* Botón hamburguesa para mobile */}
         <button className="menu-toggle" onClick={toggleMenu}>
           &#9776;
@@ -24,7 +24,13 @@ export const Header = () => {
       <nav>
         <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
           <li>
-            <a onClick={()=>{goTo("/")}}>Home</a>
+            <a
+              onClick={() => {
+                goTo("/");
+              }}
+            >
+              Home
+            </a>
           </li>
           <li>
             <a href="#about">About</a>

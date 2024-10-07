@@ -1,0 +1,16 @@
+[
+    {
+      "question": "What is the largest planet in the solar system?",
+      "options": ["Mars", "Jupiter", "Saturn", "Neptune"],
+      "correctAnswer": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the closest planet to the Sun?",
+      "options": ["Venus", "Mars", "Mercury", "Earth"],
+      "correctAnswer": 2,
+      "points": 10
+    }
+    
+  ]
+
