@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import questionsData from "./questions.json"; // Importa tu JSON aquí
 import { HeaderOnlyLogo } from "../../components/header/HeaderOnlyLogo";
 import "./quizz.css";
 import { FaArrowLeft, FaArrowRight, FaCheck } from "react-icons/fa";
 import { MdRefresh } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 export const QuizApp = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0); // Pregunta actual
   const [score, setScore] = useState(0); // Puntaje total
@@ -12,9 +11,8 @@ export const QuizApp = () => {
     Array(questionsData.length).fill(null)
   ); // Respuestas del usuario
   const [isFinished, setIsFinished] = useState(false); // Para saber si el quiz terminó
-  const navigate = useNavigate()
   // Manejador para seleccionar una opción
-  const handleAnswer = (optionIndex) => {
+  const handleAnswer = (optionIndex: number) => {
     const updatedAnswers = [...answers];
     updatedAnswers[currentQuestion] = optionIndex;
     setAnswers(updatedAnswers);

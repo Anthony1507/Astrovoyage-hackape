@@ -8,7 +8,7 @@ export const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   const navigate = useNavigate();
-  const goTo = (path) => {
+  const goTo = (path: string) => {
     navigate(path);
   };
   return (

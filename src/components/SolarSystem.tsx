@@ -1,4 +1,5 @@
 import React, { useRef, useMemo, useCallback } from 'react'
+import { ThreeEvent } from '@react-three/fiber'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Sphere, Ring, Line, Text } from '@react-three/drei'
 import * as THREE from 'three'
@@ -191,13 +192,13 @@ const CelestialBody: React.FC<CelestialBodyProps> = ({ data, onFocus }) => {
     return points
   }, [data.sma, data.eccentricity])
 
-  const handleClick = useCallback((event: THREE.Event) => {
-    event.stopPropagation()
-    if (ref.current) {
-      onFocus(ref.current.position)
-      camera.lookAt(ref.current.position)
-    }
-  }, [camera, onFocus])
+  const handleClick = useCallback((event: ThreeEvent<MouseEvent>) => {
+      event.stopPropagation()
+      if (ref.current) {
+        onFocus(ref.current.position)
+        camera.lookAt(ref.current.position)
+      }
+    }, [camera, onFocus])
 
   return (
     <group>
@@ -215,44 +216,48 @@ const CelestialBody: React.FC<CelestialBodyProps> = ({ data, onFocus }) => {
         >
           {data.label}
         </Text>
-        {data.moons?.map((moon, index) => (
-          <group key={index} rotation={[0, Math.random() * Math.PI * 2, 0]}>
-            <Line
-              points={useMemo(() => {
-                const points = []
-                for (let i = 0; i <= 64; i++) {
-                  const angle = (i / 64) * Math.PI * 2
-                  points.push(new THREE.Vector3(
-                    Math.cos(angle) * moon.distance * AU,
-                    0,
-                    Math.sin(angle) * moon.distance * AU
-                  ))
-                }
-                return points
-              }, [moon.distance])}
-              color={moon.color}
-              lineWidth={0.5}
-            />
-            <group rotation={[0, 0, 0]}>
-              <Sphere
-                args={[moon.radius * AU, 16, 16]}
-                position={[moon.distance * AU, 0, 0]}
-                onClick={handleClick}
-              >
-                <meshStandardMaterial color={moon.color} roughness={0.6} />
-              </Sphere>
-              <Text
-                position={[moon.distance * AU, moon.radius * AU * 1.2, 0]}
-                fontSize={moon.radius * AU * 0.5}
-                color="white"
-                anchorX="center"
-                anchorY="middle"
-              >
-                {moon.label}
-              </Text>
+        {data.moons?.map((moon, index) => {
+          const moonOrbitPoints = useMemo(() => {
+            const points = []
+            for (let i = 0; i <= 64; i++) {
+              const angle = (i / 64) * Math.PI * 2
+              points.push(new THREE.Vector3(
+                Math.cos(angle) * moon.distance * AU,
+                0,
+                Math.sin(angle) * moon.distance * AU
+              ))
+            }
+            return points
+          }, [moon.distance])
+
+          return (
+            <group key={index} rotation={[0, Math.random() * Math.PI * 2, 0]}>
+              <Line
+                points={moonOrbitPoints}
+                color={moon.color}
+                lineWidth={0.5}
+              />
+              <group rotation={[0, 0, 0]}>
+                <Sphere
+                  args={[moon.radius * AU, 16, 16]}
+                  position={[moon.distance * AU, 0, 0]}
+                  onClick={handleClick}
+                >
+                  <meshStandardMaterial color={moon.color} roughness={0.6} />
+                </Sphere>
+                <Text
+                  position={[moon.distance * AU, moon.radius * AU * 1.2, 0]}
+                  fontSize={moon.radius * AU * 0.5}
+                  color="white"
+                  anchorX="center"
+                  anchorY="middle"
+                >
+                  {moon.label}
+                </Text>
+              </group>
             </group>
-          </group>
-        ))}
+          )
+        })}
         {data.rings?.map((ring, index) => (
           <Ring
             key={index}

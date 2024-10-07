@@ -6,7 +6,7 @@ import "./home.css"
 import { Footer } from '../../components/footer/Footer'
 export const HomePage = () => {
     const navigate = useNavigate()
-    const goTo = (path) => {
+    const goTo = (path: string) => {
         navigate(path);
     }
 

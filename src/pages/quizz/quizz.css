@@ -40,7 +40,8 @@ box-sizing: border-box;
   box-shadow: 0 2px 10px rgba(12, 4, 45, 0.4); /* Shadow for depth */
   margin: 0;
   background: transparent; /* Fondo negro semi-transparente */
-  backdrop-filter: blur(40px); /* Desenfoque para el efecto de vidrio */
+  -webkit-backdrop-filter: blur(40px); /* Blur effect for glass look */
+  backdrop-filter: blur(40px); /* Blur effect for glass look */
 
   border-top: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
   padding-inline: 2rem;

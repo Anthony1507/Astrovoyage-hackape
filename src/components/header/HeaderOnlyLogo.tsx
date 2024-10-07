@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import LOGO from "../../../images/logo2.svg"
 export const HeaderOnlyLogo = () => {
   const navigate = useNavigate();
-  const goTo = (path) => {
+  const goTo = (path: string) => {
     navigate(path);
   };
   return (
