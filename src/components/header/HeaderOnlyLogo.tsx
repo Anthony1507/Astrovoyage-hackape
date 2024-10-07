@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import LOGO from "../../../images/logo2.svg"
+import LOGO from "../../../public/images/logo2.svg"
 export const HeaderOnlyLogo = () => {
   const navigate = useNavigate();
   const goTo = (path: string) => {

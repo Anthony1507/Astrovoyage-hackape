@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LOGO from "../../../images/logo2.svg";
+import LOGO from "../../../public/images/logo2.svg";
 import { useNavigate } from "react-router-dom";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
