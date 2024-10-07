@@ -24,22 +24,11 @@ export const Header = () => {
       <nav>
         <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
           <li>
-            <a
-              onClick={() => {
-                goTo("/");
-              }}
-            >
-              Home
-            </a>
+            <a onClick={() => { goTo("/"); }}>Home</a>
           </li>
 
             <li>
-            <a href="#gallery">Gallery</a>
-            <ul className="dropdown-menu">
-              <li>
-              <a onClick={() => { goTo("/images") }}>Images</a>
-              </li>
-            </ul>
+            <a  onClick={() => { goTo("/images") }}>Gallery</a>
             </li>
 
 
@@ -77,13 +66,10 @@ export const Header = () => {
             <a href="#more-info">More Info</a>
             <ul className="dropdown-menu">
               <li>
-                <a href="#asteroids">Asteroids</a>
+                <a onClick={()=>{goTo("/asteroids")}}>Asteroids</a>
               </li>
               <li>
-                <a href="#comets">Comets</a>
-              </li>
-              <li>
-                <a href="#dwarf-planets">Dwarf Planets</a>
+                <a onClick={()=>{goTo("/dwarfplanets")}}>Dwarf Planets</a>
               </li>
               <li>
                 <a onClick={()=>{goTo("/sun")}}>The Sun</a>

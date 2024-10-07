@@ -1,0 +1,46 @@
+.asteroids-container {
+    background-color: #2e2e2e; /* Fondo oscuro */
+    color: #ffffff; /* Texto en blanco */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 80px; /* Ajuste de margen para evitar choque con el menú superior */
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si es necesario */
+}
+
+.asteroids-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Coloca las tarjetas en una cuadrícula */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.asteroid-card {
+    background-color: #3b3b3b; /* Fondo de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    transition: transform 0.3s; /* Efecto de hover */
+}
+
+.asteroid-card:hover {
+    transform: scale(1.05); /* Escalar al pasar el mouse */
+}
+
+.asteroid-image {
+    width: 100%; /* Ancho completo */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+.asteroid-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.asteroid-description {
+    font-size: 1rem;
+    line-height: 1.5; /* Espaciado entre líneas */
+}

@@ -13,6 +13,8 @@ import UranusInfo from "../pages/planets/uranus";
 import NeptuneInfo from "../pages/planets/neptune";
 import SunInfo from "../pages/sun/sun";
 import Gallery from "../pages/gallery/images";
+import DwarfPlanets from "../pages/dwarf planets/dwarfplanets";
+import Asteroids from "../pages/asteroids/asteroids";
 
 
 
@@ -34,6 +36,8 @@ export const RoutesApp = () => {
         <Route path="/neptune" element={<NeptuneInfo/>} />
         <Route path="/sun" element={<SunInfo/>} />
         <Route path="/images" element={<Gallery/>} />
+        <Route path="/dwarfplanets" element={<DwarfPlanets/>} />
+        <Route path="/asteroids" element={<Asteroids/>} />
 
       </Routes>
     </BrowserRouter>
