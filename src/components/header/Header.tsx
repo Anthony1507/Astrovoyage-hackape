@@ -29,6 +29,7 @@ export const Header = () => {
 
             <li>
             <a  onClick={() => { goTo("/images") }}>Gallery</a>
+           
             </li>
 
 
