@@ -23,7 +23,7 @@ To run the application locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/astrovoyage.git
+   git clone https://github.com/Anthony1507/Astrovoyage-hackape.git
    ```
 
 2. Navigate to the project directory:
@@ -41,7 +41,7 @@ To run the application locally, follow these steps:
    npm start
    ```
 
-5. Open your browser and go to `http://localhost:3000` to view the application.
+5. Open your browser and go to `http://localhost:5173` to view the application.
 
 ## Contributors
 - Team Hackape
