@@ -47,7 +47,7 @@ export const Header = () => {
             <a href="#planets">Planets</a>
             <ul className="dropdown-menu">
               <li>
-                <a href="#mercury">Mercury</a>
+                <a onClick={()=>{goTo("/mercury")}}>Mercury</a>
               </li>
               <li>
                 <a href="#venus">Venus</a>
