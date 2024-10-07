@@ -47,7 +47,7 @@ export const QuizApp = () => {
   const calculateFinalScore = () => {
     let totalScore = 0;
     answers.forEach((answer, index) => {
-      if (answer === questionsData[index].correct) {
+      if (answer === questionsData[index].correctAnswer) {
         totalScore += questionsData[index].points;
       }
     });
