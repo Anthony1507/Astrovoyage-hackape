@@ -34,12 +34,8 @@ export const Header = () => {
           </li>
 
             <li>
-            <a href="#gallery">Gallery</a>
-            <ul className="dropdown-menu">
-              <li>
-              <a onClick={() => { goTo("/images") }}>Images</a>
-              </li>
-            </ul>
+            <a  onClick={() => { goTo("/images") }}>Gallery</a>
+           
             </li>
 
 
