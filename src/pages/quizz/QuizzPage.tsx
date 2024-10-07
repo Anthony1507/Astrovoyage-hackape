@@ -133,7 +133,7 @@ export const QuizApp = () => {
               Previous
             </button>
             <p>
-              Question {currentQuestion + 1} of {questionsData.length}
+              Question <br/> {currentQuestion + 1} of {questionsData.length}
             </p>
             <button onClick={handleNext} className="buttonsControlQuestion">
               {currentQuestion < questionsData.length - 1 ? (

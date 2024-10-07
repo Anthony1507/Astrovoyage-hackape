@@ -298,4 +298,7 @@ footer {
   .nav-menu li > a:active + .dropdown-menu {
     display: block; /* Mostrar submenús solo cuando se hace clic */
   }
+  .orrery-description{
+    width: 80%;
+  }
 }

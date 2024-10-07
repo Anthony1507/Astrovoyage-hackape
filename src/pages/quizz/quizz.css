@@ -117,3 +117,15 @@ box-sizing: border-box;
   color: #fff;
   background-color: rgba(96, 222, 96, 0.4);
 }
+
+@media (max-width: 768px) {
+  .footerQuizz{
+    box-sizing: border-box;
+    padding:0 2rem;
+    width: 100%;
+
+  }
+  .buttonsControlQuestion{
+    width: 6rem;
+  }
+}
