@@ -37,44 +37,65 @@ export const Header = () => {
           <li>
             <a href="#planets">Planets</a>
             <ul className="dropdown-menu">
-              <li>
-                <a onClick={()=>{goTo("/mercury")}}>Mercury</a>
-              </li>
-              <li>
-                <a onClick={()=>{goTo("/venus")}}>Venus</a>
-              </li>
-              <li>
-                <a onClick={()=>{goTo("/earth")}}>Earth</a>
-              </li>
-              <li>
-                <a onClick={()=>{goTo("/mars")}}>Mars</a>
-              </li>
-              <li>
-                <a onClick={()=>{goTo("/jupiter")}}>Jupiter</a>
-              </li>
-              <li>
-                <a onClick={()=>{goTo("/saturn")}}>Saturn</a>
-              </li>
-              <li>
-                <a onClick={()=>{goTo("/uranus")}}>Uranus</a>
-              </li>
-              <li>
-                <a onClick={()=>{goTo("/neptune")}}>Neptune</a>
-              </li>
+            <ul>
+  <li>
+    <a onClick={() => { goTo("/mercury"); }} onTouchEnd={() => { goTo("/mercury"); }}>Mercury</a>
+  </li>
+  <li>
+    <a onClick={() => { goTo("/venus"); }} onTouchEnd={() => { goTo("/venus"); }}>Venus</a>
+  </li>
+  <li>
+    <a onClick={() => { goTo("/earth"); }} onTouchEnd={() => { goTo("/earth"); }}>Earth</a>
+  </li>
+  <li>
+    <a onClick={() => { goTo("/mars"); }} onTouchEnd={() => { goTo("/mars"); }}>Mars</a>
+  </li>
+  <li>
+    <a onClick={() => { goTo("/jupiter"); }} onTouchEnd={() => { goTo("/jupiter"); }}>Jupiter</a>
+  </li>
+  <li>
+    <a onClick={() => { goTo("/saturn"); }} onTouchEnd={() => { goTo("/saturn"); }}>Saturn</a>
+  </li>
+  <li>
+    <a onClick={() => { goTo("/uranus"); }} onTouchEnd={() => { goTo("/uranus"); }}>Uranus</a>
+  </li>
+  <li>
+    <a onClick={() => { goTo("/neptune"); }} onTouchEnd={() => { goTo("/neptune"); }}>Neptune</a>
+  </li>
+</ul>
+
             </ul>
           </li>
           <li>
             <a href="#more-info">More Info</a>
             <ul className="dropdown-menu">
-              <li>
-                <a onClick={()=>{goTo("/asteroids")}}>Asteroids</a>
-              </li>
-              <li>
-                <a onClick={()=>{goTo("/dwarfplanets")}}>Dwarf Planets</a>
-              </li>
-              <li>
-                <a onClick={()=>{goTo("/sun")}}>The Sun</a>
-              </li>
+            <ul>
+  <li>
+    <a 
+      onClick={() => { goTo("/asteroids"); }} 
+      onTouchEnd={() => { goTo("/asteroids"); }}
+    >
+      Asteroids
+    </a>
+  </li>
+  <li>
+    <a 
+      onClick={() => { goTo("/dwarfplanets"); }} 
+      onTouchEnd={() => { goTo("/dwarfplanets"); }}
+    >
+      Dwarf Planets
+    </a>
+  </li>
+  <li>
+    <a 
+      onClick={() => { goTo("/sun"); }} 
+      onTouchEnd={() => { goTo("/sun"); }}
+    >
+      The Sun
+    </a>
+  </li>
+</ul>
+
             </ul>
           </li>
         </ul>
