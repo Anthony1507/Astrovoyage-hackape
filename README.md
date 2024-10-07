@@ -28,7 +28,7 @@ To run the application locally, follow these steps:
 
 2. Navigate to the project directory:
    ```bash
-   cd astrovoyage
+   cd Astrovoyage-hackape
    ```
 
 3. Install dependencies:
