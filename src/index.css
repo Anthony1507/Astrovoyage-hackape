@@ -44,7 +44,7 @@ main {
 
 /* Header styles */
 header {
-  top:0;
+  top: 0;
   position: fixed;
   z-index: 200;
   display: flex;
@@ -63,7 +63,6 @@ header {
   background: transparent; /* Fondo negro semi-transparente */
   -webkit-backdrop-filter: blur(40px); /* Blur effect for glass look */
   backdrop-filter: blur(40px); /* Blur effect for glass look */
-
   
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
 }
@@ -101,7 +100,7 @@ h1 {
   gap: 15px;
   margin: 0;
   padding: 0;
-  margin-right: 1rem;
+  margin-right: 6rem;
 }
 
 /* Navigation menu item styles */
@@ -127,7 +126,7 @@ h1 {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 100%; /* Align directly below the menu item */
   left: 0;
   background: linear-gradient(
     135deg,
@@ -137,7 +136,7 @@ h1 {
   padding: 10px;
   list-style: none;
   margin: 0;
-  z-index: 10; /* Ensure dropdown appears above other elements */
+  z-index: 1000; /* Asegurar que el dropdown esté por encima */
 }
 
 /* Dropdown menu link styles */
@@ -165,7 +164,7 @@ h1 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Shadow to highlight the box */
   font-family: "Orbitron", sans-serif;
   max-height: 45vh;
-  overflow: scroll;
+  overflow: auto; /* Allow scrolling if content is too long */
 }
 
 /* Orrery description header styles */
@@ -204,8 +203,9 @@ footer {
 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para darle más profundidad */
   border-top: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
-
+  margin-top: 20px; /* Agrega margen superior para separarlo de los contenedores */
 }
+
 
 /* Ocultar el scroll en pantallas grandes (PC) */
 @media (min-width: 1024px) {
@@ -263,10 +263,9 @@ footer {
   color: white;
 }
 
-
 /* Media queries para móviles */
 @media (max-width: 768px) {
-  .logo-container{
+  .logo-container {
     width: 100%;
     justify-content: space-between;
     padding: 0 1rem;
@@ -276,17 +275,18 @@ footer {
     box-sizing: border-box;
     flex-direction: column;
     background: linear-gradient(
-    135deg,
-    #232323,
-    #0c0231
-  );
-  box-sizing: border-box;
+      135deg,
+      #232323,
+      #0c0231
+    );
+    box-sizing: border-box;
     position: absolute;
-    top: 8vh;
+    top: 8vh; /* Mantener la posición del menú principal */
     right: 0;
     width: 100%;
     padding: 10px;
     margin-right: 0;
+    z-index: 1000; /* Asegurar que el menú esté por encima */
   }
 
   .nav-menu.open {
@@ -313,7 +313,8 @@ footer {
   .nav-menu li > a:active + .dropdown-menu {
     display: block; /* Mostrar submenús solo cuando se hace clic */
   }
-  .orrery-description{
+  .orrery-description {
     width: 80%;
   }
 }
+
