@@ -143,50 +143,12 @@ const orbitalData: OrbitalData[] = [
 
 // asteroides
 const asteroidData = [
-  { label: 'Ceres', sma: 2.7675, eccentricity: 0.0758, radius: 0.0003 * PLANET_SCALE, color: '#8B8989' },
   { label: 'Vesta', sma: 2.3615, eccentricity: 0.0887, radius: 0.0002 * PLANET_SCALE, color: '#CD853F' },
   { label: 'Pallas', sma: 2.7724, eccentricity: 0.2312, radius: 0.0002 * PLANET_SCALE, color: '#D3D3D3' },
+  { label: 'Hygiea', sma: 3.142, eccentricity: 0.112, radius: 0.0002 * PLANET_SCALE, color: '#D8BFD8' },
+  { label: 'Eros', sma: 67.864, eccentricity: 0.44177, radius: 0.0007 * PLANET_SCALE, color: '#FFD700' },
+  { label: 'Juno', sma: 2.669, eccentricity: 0.255, radius: 0.0002 * PLANET_SCALE, color: '#B0C4DE' }
 ];
-
-
-//cometas
-const cometData = [
-  {
-    label: 'P/2004 R1 (McNaught)',
-    eccentricity: 0.682526943,
-    inclination: 4.894555854, // en grados
-    omega: 0.626837835, // argumento del perihelio
-    period: 5.48, // período en años
-    raan: 295.9854497, // longitud del nodo ascendente
-    sma: 1.0, // semi-eje mayor (puedes ajustarlo según tus necesidades)
-    color: '#FF4500', // color representativo
-    // Aquí podrías agregar propiedades adicionales como la distancia de acercamiento (moid_au)
-  },
-  {
-    label: 'P/2008 S1 (Catalina-McNaught)',
-    eccentricity: 0.6663127807,
-    inclination: 15.1007464,
-    omega: 203.6490232,
-    period: 6.74,
-    raan: 111.3920029,
-    sma: 1.0,
-    color: '#1E90FF',
-  },
-  {
-    label: '1P/Halley',
-    eccentricity: 0.9671429085,
-    inclination: 162.2626906,
-    omega: 111.3324851,
-    period: 75.32,
-    raan: 58.42008098,
-    sma: 1.0,
-    color: '#FFD700',
-  },
-  // Agrega más cometas según sea necesario
-];
-
-
-
 interface CelestialBodyProps {
   data: OrbitalData
   onFocus: (position: THREE.Vector3) => void
