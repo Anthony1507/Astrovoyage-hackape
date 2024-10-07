@@ -1,0 +1,116 @@
+/* Estilo general */
+.planet-container {
+    padding: 40px;
+    background-color: #1b1c1e;
+    color: #f0f0f0;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Título principal */
+  .planet-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 4rem;
+    color: #ffac33;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .planet-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Imagen del planeta */
+  .planet-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .planet-image img {
+    max-width: 400px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Datos destacados */
+  .planet-highlights {
+    background-color: #2d2f33;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .highlight-title {
+    font-size: 2rem;
+    color: #ffac33;
+    margin-bottom: 15px;
+  }
+  
+  .planet-highlights ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .planet-highlights li {
+    padding: 8px 0;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    border-bottom: 1px solid #3d3f43;
+  }
+  
+  /* Información detallada */
+  .planet-details {
+    background-color: #2d2f33;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .planet-details h2 {
+    font-size: 2.5rem;
+    color: #ffac33;
+    margin-bottom: 20px;
+  }
+  
+  .planet-details p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #f0f0f0;
+  }
+  
+  /* Misiones */
+  .planet-missions {
+    background-color: #2d2f33;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .planet-missions h2 {
+    font-size: 2.5rem;
+    color: #ffac33;
+    margin-bottom: 20px;
+  }
+  
+  .planet-missions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .planet-missions li {
+    padding: 8px 0;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    border-bottom: 1px solid #3d3f43;
+  }
+  

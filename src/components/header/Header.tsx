@@ -33,42 +33,31 @@ export const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#about">About</a>
-            <ul className="dropdown-menu">
-              <li>
-                <a href="#team">Team</a>
-              </li>
-              <li>
-                <a href="#history">History</a>
-              </li>
-            </ul>
-          </li>
-          <li>
             <a href="#planets">Planets</a>
             <ul className="dropdown-menu">
               <li>
                 <a onClick={()=>{goTo("/mercury")}}>Mercury</a>
               </li>
               <li>
-                <a href="#venus">Venus</a>
+                <a onClick={()=>{goTo("/venus")}}>Venus</a>
               </li>
               <li>
-                <a href="#earth">Earth</a>
+                <a onClick={()=>{goTo("/earth")}}>Earth</a>
               </li>
               <li>
-                <a href="#mars">Mars</a>
+                <a onClick={()=>{goTo("/mars")}}>Mars</a>
               </li>
               <li>
-                <a href="#jupiter">Jupiter</a>
+                <a onClick={()=>{goTo("/jupiter")}}>Jupiter</a>
               </li>
               <li>
-                <a href="#saturn">Saturn</a>
+                <a onClick={()=>{goTo("/saturn")}}>Saturn</a>
               </li>
               <li>
-                <a href="#uranus">Uranus</a>
+                <a onClick={()=>{goTo("/uranus")}}>Uranus</a>
               </li>
               <li>
-                <a href="#neptune">Neptune</a>
+                <a onClick={()=>{goTo("/neptune")}}>Neptune</a>
               </li>
             </ul>
           </li>
