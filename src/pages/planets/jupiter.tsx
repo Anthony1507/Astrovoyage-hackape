@@ -1,6 +1,7 @@
 import React from 'react';
 import './jupiter.css';  // Importa el archivo de estilos específico
 import { Header } from '../../components/header/Header';
+import { Footer } from '../../components/footer/Footer';
 
 
 
@@ -60,6 +61,7 @@ const JupiterInfo = () => {
     </p>
   </div>
 </div>
+<Footer />
 </>
     );
   };

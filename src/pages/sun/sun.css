@@ -1,116 +1,130 @@
 /* Estilo general */
-.planet-container {
-   padding: 40px;
-   background-color: #1b1c1e;
-   color: #f0f0f0;
-   border-radius: 15px;
-   max-width: 1200px;
-   margin: 80px auto 0; /* Aumenta el margen superior según sea necesario */
-   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Título principal */
-  .planet-title {
+.sun-container {
+    padding: 40px;
+    background-color: #1b1c1e;
+    color: #f0f0f0;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 40px rgba(255, 172, 51, 0.5);
+}
+
+/* Título principal */
+.sun-title {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 4rem;
     color: #ffac33;
     text-align: center;
     margin-bottom: 10px;
-  }
-  
-  .planet-subtitle {
+    text-shadow: 2px 2px 10px rgba(255, 172, 51, 0.7);
+}
+
+.sun-subtitle {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     color: #ccc;
     text-align: center;
     margin-bottom: 40px;
-  }
-  
-  /* Imagen del planeta */
-  .planet-image {
+}
+
+/* Imagen del planeta */
+.sun-image {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-  }
-  
-  .planet-image img {
+}
+
+.sun-image img {
     max-width: 400px;
     border-radius: 50%;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.6);
-  }
-  
-  /* Datos destacados */
-  .planet-highlights {
+    box-shadow: 0px 0px 40px rgba(255, 172, 51, 0.6);
+}
+
+/* Datos destacados */
+.sun-highlights {
     background-color: #2d2f33;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
-  }
-  
-  .highlight-title {
+}
+
+.highlight-title {
     font-size: 2rem;
     color: #ffac33;
     margin-bottom: 15px;
-  }
-  
-  .planet-highlights ul {
+}
+
+.sun-highlights ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .planet-highlights li {
+}
+
+.sun-highlights li {
     padding: 8px 0;
     font-size: 1.2rem;
     color: #f0f0f0;
     border-bottom: 1px solid #3d3f43;
-  }
-  
-  /* Información detallada */
-  .planet-details {
+}
+
+/* Información detallada */
+.sun-details {
     background-color: #2d2f33;
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
-  }
-  
-  .planet-details h2 {
+}
+
+.sun-details h2 {
     font-size: 2.5rem;
     color: #ffac33;
     margin-bottom: 20px;
-  }
-  
-  .planet-details p {
+}
+
+.sun-details p {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #f0f0f0;
-  }
-  
-  /* Misiones */
-  .planet-missions {
+}
+
+/* Misiones */
+.sun-missions {
     background-color: #2d2f33;
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
-  }
-  
-  .planet-missions h2 {
+}
+
+.sun-missions h2 {
     font-size: 2.5rem;
     color: #ffac33;
     margin-bottom: 20px;
-  }
-  
-  .planet-missions ul {
+}
+
+.sun-missions ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .planet-missions li {
+}
+
+.sun-missions li {
     padding: 8px 0;
     font-size: 1.2rem;
     color: #f0f0f0;
     border-bottom: 1px solid #3d3f43;
-  }
-  
+}
+
+/* Estilo adicional */
+.sun-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/images/sun_background.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+}

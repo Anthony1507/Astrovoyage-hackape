@@ -1,6 +1,7 @@
 import React from 'react';
 import './mercury.css';  // Importa el archivo de estilos específico
 import { Header } from '../../components/header/Header';
+import { Footer } from '../../components/footer/Footer';
 
 
 
@@ -58,7 +59,9 @@ const MercuryInfo = () => {
             Future missions, like the joint ESA-JAXA mission <strong>BepiColombo</strong>, aim to further unlock the secrets of this enigmatic world.
           </p>
         </div>
-      </div></>
+      </div>
+      <Footer />
+      </>
     );
   };
 

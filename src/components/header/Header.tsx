@@ -32,6 +32,18 @@ export const Header = () => {
               Home
             </a>
           </li>
+
+            <li>
+            <a href="#gallery">Gallery</a>
+            <ul className="dropdown-menu">
+              <li>
+              <a onClick={() => { goTo("/images") }}>Images</a>
+              </li>
+            </ul>
+            </li>
+
+
+
           <li>
             <a href="#planets">Planets</a>
             <ul className="dropdown-menu">
@@ -74,7 +86,7 @@ export const Header = () => {
                 <a href="#dwarf-planets">Dwarf Planets</a>
               </li>
               <li>
-                <a href="#sun">The Sun</a>
+                <a onClick={()=>{goTo("/sun")}}>The Sun</a>
               </li>
             </ul>
           </li>
